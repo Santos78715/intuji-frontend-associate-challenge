@@ -1,0 +1,144 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.card {
+  background: #4745a4;
+  color: black;
+  border-radius: 12px;
+  border: 1px solid #dededeb2;
+  overflow: hidden;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  transition: transform 0.3s;
+  flex: 1 1 280px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.main-card {
+  background-color: #4745a4;
+  color: white;
+}
+
+.alt-card {
+  background-color: white;
+  color: black;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card-header img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 5px;
+  border: 2px solid #dedede33;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card-title h5 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.card-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #bbb;
+  margin-top: 4px;
+}
+
+.card-subtitle p {
+  margin: 0;
+}
+
+.card-subtitle img {
+  width: fit-content;
+  height: fit-content;
+  padding: 0px;
+  border-radius: 30%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 0 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-content p {
+  font-size: 2rem;
+  color: #ddd;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+
+.card-content img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 900px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .card-content img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    margin: 0 12px;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .card-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .card-content p {
+    font-size: 1.5rem;
+  }
+}

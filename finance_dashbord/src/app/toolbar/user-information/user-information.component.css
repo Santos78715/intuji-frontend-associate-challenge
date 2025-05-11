@@ -1,0 +1,44 @@
+.toolbar-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 8px 12px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.toolbar-actions .icon-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 10px;
+  border: 1px solid #dedede;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.toolbar-actions .icon-button img {
+  width: 1.5rem;
+  height: 1.3rem;
+  pointer-events: none;
+}
+
+.toolbar-actions p {
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  color: #2e2e2e;
+  white-space: nowrap;
+}

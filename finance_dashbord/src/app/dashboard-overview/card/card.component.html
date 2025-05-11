@@ -1,0 +1,26 @@
+<div class="card-container">
+  <div
+    *ngFor="let card of cards"
+    class="card"
+    [ngClass]="{
+      'main-card': card.title.toLowerCase().includes('main balance'),
+      'alt-card': !card.title.toLowerCase().includes('main balance')
+    }"
+  >
+    <div class="card-header">
+      <img [src]="card.icon" alt="Wallet" />
+      <div class="card-title">
+        <h5>{{ card.title }}</h5>
+        <div class="card-subtitle">
+          <img [src]="card.trendIcon" alt="Comparison" />
+          <p>{{ card.subtitle }}</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="card-content">
+      <h4>{{ card.amount }}</h4>
+      <img [src]="card.arrowIcon" alt="Comparison" />
+    </div>
+  </div>
+</div>

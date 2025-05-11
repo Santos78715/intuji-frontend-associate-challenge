@@ -1,0 +1,99 @@
+.transaction-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: #1b1b33;
+}
+
+.header a {
+  color: #6a5acd;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+hr {
+  margin: 12px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  line-height: 1;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.icon-placeholder {
+  width: 48px;
+  height: 48px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.icon-placeholder img {
+  width: 28px;
+  height: 28px;
+}
+
+.info {
+  margin-left: 10px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.name {
+  font-weight: 700;
+  color: #1b1b33;
+}
+
+.date {
+  font-size: 12px;
+  font-weight: 400;
+  color: #7a7a9d;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.right {
+  text-align: right;
+}
+
+.amount {
+  font-weight: 600;
+  font-size: 18px;
+  color: #1b1b33;
+}
+
+.status {
+  font-size: 13px;
+  color: #3ccf91;
+}

@@ -1,0 +1,112 @@
+.saving-plan-card {
+  height: fit-content;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.header h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e1e2f;
+  margin: 0;
+}
+
+.header a {
+  color: #6a5acd;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.item {
+  margin-top: 20px;
+}
+
+hr {
+  margin: 12px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+.top-row,
+.amount-row {
+  line-height: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-weight: 500;
+  color: #1e1e2f;
+}
+
+.target {
+  font-size: 13px;
+  color: #8c8c99;
+}
+
+.amount {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1e1e2f;
+}
+
+.total {
+  font-size: 13px;
+  font-weight: 400;
+  color: #999;
+}
+
+.percentage {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.percentage.purple {
+  color: #5b3cc4;
+}
+
+.percentage.yellow {
+  color: #d8a000;
+}
+
+.percentage.green {
+  color: #2f9e44;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 8px;
+  margin-bottom: 30px;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 8px;
+}
+
+.progress.purple {
+  background: #5b3cc4;
+}
+
+.progress.yellow {
+  background: #f1c40f;
+}
+
+.progress.green {
+  background: #2f9e44;
+}

@@ -1,0 +1,36 @@
+<div class="saving-plan-card">
+  <div class="header">
+    <h4>Saving Plan</h4>
+    <a href="#">See All</a>
+  </div>
+  <hr />
+
+  <!-- Using async pipe to subscribe to savings$ -->
+  <div *ngFor="let item of savings$ | async" class="item">
+    <div class="top-row">
+      <span class="title">{{ item.title }}</span>
+      <span class="target">Target: {{ item.targetDate }}</span>
+    </div>
+
+    <div class="amount-row">
+      <span class="amount">
+        ${{ item.amount | number : "1.0-2" }}
+        <span class="total">/ ${{ item.total }}</span>
+      </span>
+      <span
+        class="percentage"
+        [ngClass]="getColorClass(getPercentage(item.amount, item.total))"
+      >
+        {{ getPercentage(item.amount, item.total) }}%
+      </span>
+    </div>
+
+    <div class="progress-bar">
+      <div
+        class="progress"
+        [ngClass]="getColorClass(getPercentage(item.amount, item.total))"
+        [ngStyle]="{ width: getPercentage(item.amount, item.total) + '%' }"
+      ></div>
+    </div>
+  </div>
+</div>

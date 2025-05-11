@@ -1,0 +1,30 @@
+.search {
+  padding: 10px;
+}
+
+.search-bar {
+  height: 40px;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.search-bar img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #333;
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  width: 100%;
+}

@@ -1,0 +1,28 @@
+.main-content {
+  margin: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  max-height: 100%;
+  align-items: stretch;
+}
+
+.right-content {
+  flex: 1 1;
+  margin: 0;
+  gap: 20px;
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-content {
+  flex: 2 2;
+  margin: 0;
+  gap: 20px;
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,39 @@
+<div class="dashboar-menu">
+  <img src="../../assets/navigation-icons/person.jpg" alt="Logo" class="logo" />
+
+  <div class="menu">
+    <a
+      class="menu-item-data"
+      *ngFor="let item of menuItemData"
+      routerLinkActive="activebutton"
+      [routerLink]="'/' + item.route"
+    >
+      <img [src]="item.src" alt="{{ item.name }}" />
+      <p>{{ item.name }}</p>
+    </a>
+
+    <hr />
+
+    <a
+      class="menu-item-profile"
+      *ngFor="let item of menuItemProfile"
+      [routerLink]="'/' + item.route"
+      routerLinkActive="activebutton"
+    >
+      <img [src]="item.src" alt="{{ item.name }}" />
+      <p>{{ item.name }}</p>
+    </a>
+
+    <div class="sessions">
+      <a
+        class="menu-item-sessions"
+        *ngFor="let item of menuItemSession"
+        [routerLink]="'/' + item.route"
+        routerLinkActive="activebutton"
+      >
+        <img [src]="item.src" alt="{{ item.name }}" />
+        <p>{{ item.name }}</p>
+      </a>
+    </div>
+  </div>
+</div>
